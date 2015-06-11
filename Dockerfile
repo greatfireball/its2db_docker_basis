@@ -66,3 +66,7 @@ RUN add-apt-repository --yes ppa:j-4/vienna-rna
 
 # And install the vienna-rna package
 RUN apt-get update && apt-get install --quiet --assume-yes vienna-rna
+
+# Install the package imagemagick
+RUN apt-get install --quiet --assume-yes imagemagick
+
