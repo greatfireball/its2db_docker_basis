@@ -72,3 +72,6 @@ RUN apt-get install --quiet --assume-yes imagemagick
 
 # Install the ncbi-blast+ package
 RUN apt-get install --quiet --assume-yes ncbi-blast+
+
+# Install the emboss package
+RUN apt-get install --quiet --assume-yes emboss
