@@ -78,3 +78,6 @@ RUN apt-get install --quiet --assume-yes emboss
 
 # Install the muscle package
 RUN apt-get install --quiet --assume-yes muscle
+
+# Install the clustalw package
+RUN apt-get install --quiet --assume-yes clustalw
