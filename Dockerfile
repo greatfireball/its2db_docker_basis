@@ -81,3 +81,6 @@ RUN apt-get install --quiet --assume-yes muscle
 
 # Install the clustalw package
 RUN apt-get install --quiet --assume-yes clustalw
+
+# Install the hmmer2 package
+RUN apt-get install --quiet --assume-yes hmmer2
