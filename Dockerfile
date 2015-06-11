@@ -70,3 +70,5 @@ RUN apt-get update && apt-get install --quiet --assume-yes vienna-rna
 # Install the package imagemagick
 RUN apt-get install --quiet --assume-yes imagemagick
 
+# Install the ncbi-blast+ package
+RUN apt-get install --quiet --assume-yes ncbi-blast+
