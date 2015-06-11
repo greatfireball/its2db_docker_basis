@@ -63,3 +63,6 @@ RUN apt-get install --assume-yes software-properties-common
 
 # Adding the PPA for the viennarna package
 RUN add-apt-repository --yes ppa:j-4/vienna-rna
+
+# And install the vienna-rna package
+RUN apt-get update && apt-get install --quiet --assume-yes vienna-rna
