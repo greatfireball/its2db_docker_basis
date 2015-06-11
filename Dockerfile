@@ -57,3 +57,6 @@ RUN for MODULE in \
 	Catalyst::Controller::BindLex \
 	Catalyst::Controller::REST; \
 	do perl -MCPAN -e "install $MODULE"; done
+
+# Adding the required packages to add PPAs:
+RUN apt-get install --assume-yes software-properties-common
