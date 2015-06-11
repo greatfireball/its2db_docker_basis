@@ -75,3 +75,6 @@ RUN apt-get install --quiet --assume-yes ncbi-blast+
 
 # Install the emboss package
 RUN apt-get install --quiet --assume-yes emboss
+
+# Install the muscle package
+RUN apt-get install --quiet --assume-yes muscle
