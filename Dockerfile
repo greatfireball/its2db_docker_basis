@@ -61,6 +61,9 @@ RUN for MODULE in \
 # Adding the required packages to add PPAs:
 RUN apt-get install --assume-yes software-properties-common
 
+# And enable the multiverse repository
+RUN apt-add-repository multiverse && apt-get update
+
 # Adding the PPA for the viennarna package
 RUN add-apt-repository --yes ppa:j-4/vienna-rna
 
