@@ -87,3 +87,17 @@ RUN apt-get install --quiet --assume-yes clustalw
 
 # Install the hmmer2 package
 RUN apt-get install --quiet --assume-yes hmmer2
+
+# Install everything which is required for newick_utils
+RUN apt-get install --quiet --assume-yes bison
+RUN apt-get install --quiet --assume-yes flex
+
+# Clone the repository and install
+RUN cd /tmp/ && \
+    git clone https://github.com/tjunier/newick_utils.git && \
+    cd newick_utils && \
+    autoreconf -fi && \
+    ./configure && \
+    make && \
+    make check && \
+    make install
