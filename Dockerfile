@@ -7,6 +7,7 @@ MAINTAINER Frank Förster <frank.foerster@biozentrum.uni-wuerzburg.de>
 
 # Install packages from first installation step
 RUN apt-get update && apt-get install --quiet --assume-yes \
+    build-essential \
     bzip2 \
     fonts-liberation \
     gcc \
