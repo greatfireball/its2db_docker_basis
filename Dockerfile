@@ -92,6 +92,7 @@ RUN apt-get install --quiet --assume-yes hmmer2
 # Install everything which is required for newick_utils
 RUN apt-get install --quiet --assume-yes bison
 RUN apt-get install --quiet --assume-yes flex
+RUN apt-get install --quiet --assume-yes sudo autoconf libtool
 
 # Clone the repository and install
 RUN cd /tmp/ && \
